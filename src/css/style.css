@@ -54,6 +54,68 @@ header{
     height: 20px;
 }
 
+#calendar-button{
+    cursor: pointer;
+}
+
+.calendar-on{
+    display: none;
+}
+
+#calendar-modal{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 20px;
+    border-radius: 8px;
+    background: var(--secondary-1);
+    z-index: 10;
+}
+
+#calendar-close{
+    cursor: pointer;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal-header p{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.modal-items{
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    color: var(--secondary-3);
+}
+
+.modal-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.day{
+    background-color: var(--primary-1);
+    padding: 4px;
+    border-radius: 4px;
+    color: var(--secondary-1);
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
 
 @media(min-width: 800px){
     .header-menu ul{
@@ -65,6 +127,7 @@ header{
     .header-menu li{
         padding-bottom: 2px;
         border-bottom: 2px solid var(--primary-1);
+        cursor: pointer;
     }
 
     .header-menu li:hover{
