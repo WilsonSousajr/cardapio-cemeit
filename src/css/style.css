@@ -31,6 +31,7 @@ header{
     background-color: var(--primary-1);
     padding: 20px;
     color: var(--secondary-1);
+    margin-bottom: 60px;
 }
 
 .header-menu ul{
@@ -117,6 +118,70 @@ header{
     z-index: 5;
 }
 
+
+.meal-header{
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+}
+
+.meal-header h3{
+    font-weight: 500;
+}
+
+.time-group{
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--secondary-3);
+    align-items: center;
+    gap: 10px;
+}
+
+.time-group img{
+    width: 18px;
+}
+
+.meal{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 430px;
+}
+
+.meal-body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0.5px 1px 4px 0px var(--secondary-2);
+    border-radius: 8px;
+}
+
+.meal-body-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meal-body-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--secondary-3);
+    font-size: 0.75rem;
+}
+
+
+.food{
+    font-weight: 500;
+}
+
+#lunch{
+   display: none;
+}
+
 @media(min-width: 800px){
     .header-menu ul{
         display: flex;
@@ -132,6 +197,17 @@ header{
 
     .header-menu li:hover{
         border-bottom: 2px solid var(--secondary-1);
+    }
+
+    #lunch{
+        display: flex;
+    }
+
+    .meal-main{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
